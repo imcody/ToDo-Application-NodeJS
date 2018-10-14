@@ -1,5 +1,7 @@
+//loading the express module
 var express = require('express');
 var app = express();
+//loading the Controllers
 var todoC = require('./controllers/todoController');
 
 //set up the view engine
