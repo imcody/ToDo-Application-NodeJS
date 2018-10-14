@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <% include partial/header.ejs %>
+    <body>
+        <h1>My todo list</h1>
+        <div id="todo-table">
+            <form class="">
+                <input type="text" name="item" placeholder="Add new item.." required autofocus autocomplete="off" />
+                <button type="submit">Add Item</button>
+            </form>
+            <ul>
+				<!--Iterating through array items -->
+                <% for(var i = 0; i < vars.length; i++) { %>
+                    <li title="Click to remove from list"><%= vars[i].item %></li>
+                <% } %>
+            </ul>
+        </div>
+    </body>
+</html>
