@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var mongo = require('mongoose');
 
 //Connect to the MongoDB Database.
+//go to mlab.com to signup a free account.
 mongo.connect('mongodb://tarek:tarek123@ds125273.mlab.com:25273/nodejs');
 
 //Create a Schema
